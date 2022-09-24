@@ -1,0 +1,9 @@
+
+name: validate-format
+on: push
+
+jobs:
+  job-name:
+    runs-on: hashicorp/terraform
+    container:
+      image: mjkunc:latest
