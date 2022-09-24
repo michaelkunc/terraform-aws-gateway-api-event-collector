@@ -1,9 +1,11 @@
 
 name: validate-format
-on: push
+on: [push]
 
 jobs:
-  job-name:
+  validate:
     runs-on: hashicorp/terraform
     container:
       image: mjkunc:latest
+    steps:
+      - run: echo "kicking off the validate job!"
